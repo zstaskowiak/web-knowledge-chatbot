@@ -4,11 +4,11 @@ This project demonstrates how to implement a Retrieval-Augmented Generation (RAG
 It retrieves, processes, and summarizes information directly from multiple websites.
 While the demo uses public web pages about the DC Comics universe as an example dataset, the architecture can be easily adapted for business use cases — such as:
 
-collecting and summarizing product information from e-commerce sites,
+-  collecting and summarizing product information from e-commerce sites,
 
-extracting insights from marketing or R&D reports,
+-  extracting insights from marketing or R&D reports,
 
-creating internal knowledge retrieval tools.
+-  creating internal knowledge retrieval tools.
 
 ---
 
@@ -38,21 +38,10 @@ creating internal knowledge retrieval tools.
 
 5) Queries are answered through an integrated Phi-3 LLM, combining retrieval and generation for accurate responses.
 
-## 💡 Example Use Case
-
-You can adapt this project to:
-
-Build a product knowledge assistant that retrieves product specs and reviews.
-
-Summarize company documents or research papers.
-
-Develop a chatbot that answers questions about your organization’s data.
-
 ---
 
 ## 🧠 Sample Query
 user_question = "Who invented Batman?"
-
 
 Response (example):
 
