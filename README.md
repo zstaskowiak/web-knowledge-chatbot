@@ -1,5 +1,4 @@
 # Retrieval-Augmented Generation (RAG) Web Information Extractor
-Overview
 
 This project demonstrates how to implement a Retrieval-Augmented Generation (RAG) pipeline using LangChain, FAISS, HuggingFace embeddings, and Microsoft Phi-3.
 It retrieves, processes, and summarizes information directly from multiple websites.
@@ -11,33 +10,35 @@ extracting insights from marketing or R&D reports,
 
 creating internal knowledge retrieval tools.
 
-🔧 Technologies Used
+---
 
-Python
+## 🔧 Technologies Used
 
-LangChain
+-  Python
 
-FAISS (vector database for semantic search)
+-  LangChain
 
-HuggingFace sentence-transformers
+-  FAISS (vector database for semantic search)
 
-Microsoft Phi-3-mini model via llama-cpp-python
+-  HuggingFace sentence-transformers
 
-WebBaseLoader for dynamic website content extraction
+-  Phi-3-mini model via llama-cpp-python
 
-⚙️ How It Works
+-  WebBaseLoader for dynamic website content extraction
 
-Loads and cleans text from multiple websites using WebBaseLoader.
+## ⚙️ How It Works
 
-Splits text into manageable chunks with RecursiveCharacterTextSplitter.
+1) Loads and cleans text from multiple websites using WebBaseLoader.
 
-Generates embeddings using sentence-transformers/all-MiniLM-L6-v2.
+2) Splits text into manageable chunks with RecursiveCharacterTextSplitter.
 
-Indexes data into a FAISS vector store for semantic retrieval.
+3) Generates embeddings using sentence-transformers/all-MiniLM-L6-v2.
 
-Queries are answered through an integrated Phi-3 LLM, combining retrieval and generation for accurate responses.
+4) Indexes data into a FAISS vector store for semantic retrieval.
 
-💡 Example Use Case
+5) Queries are answered through an integrated Phi-3 LLM, combining retrieval and generation for accurate responses.
+
+## 💡 Example Use Case
 
 You can adapt this project to:
 
@@ -47,7 +48,9 @@ Summarize company documents or research papers.
 
 Develop a chatbot that answers questions about your organization’s data.
 
-🧠 Sample Query
+---
+
+## 🧠 Sample Query
 user_question = "Who invented Batman?"
 
 
@@ -55,7 +58,7 @@ Response (example):
 
 Batman, a character in the DC Comics universe, was created by artist Bob Kane and writer Bill Finger. His first appearance is in Detective Comics #27 published on March 30, 1939.
 
-📂 Dataset Note
+## 📂 Dataset Note
 
 The current dataset (DC Comics articles) was used to demonstrate functionality.
 The same pipeline can be applied to any website.
